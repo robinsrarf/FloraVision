@@ -7,16 +7,25 @@ this project is made using [vite-react](https://vite.dev/) for project templete 
 
 ## Run Project Locally
 
-### Clone the Github Repo
+### Clone the Github Repo:
 
-`git clone https://github.com/robinsrarf/FloraVision.git`
+    git clone https://github.com/robinsrarf/FloraVision.git
 
 ### Run Using npm
 
-` npm run dev`
+    npm run dev
 
 ##
 
 this project is hosted using [vercel](https://vercel.com/)
 
-[live-project-link]()
+[live-project-link](https://flora-vision-rouge.vercel.app/)
+
+##
+
+Get in Touch
+
+- Email: robinsrarf@gmail.com
+- LinkedIn: [My LinkedIn](https://www.linkedin.com/in/robin-srarf/)
+
+##
