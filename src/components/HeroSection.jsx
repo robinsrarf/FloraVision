@@ -121,6 +121,7 @@ function Carousel({ list }) {
           <div className="absolute bottom-15 flex w-full justify-center gap-1">
             {list.map((_, index) => (
               <div
+                key={index}
                 className={`${index === currIndex ? "w-3" : "w-1"} h-1 rounded-full bg-white/70 transition-all duration-300`}
               ></div>
             ))}
