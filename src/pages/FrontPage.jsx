@@ -7,7 +7,7 @@ import CustomerReview from "../components/CustomerReview";
 import OurBestO2 from "../components/OurBestO2";
 import Footer from "../components/Footer";
 
-function FrontPage() {
+export default function FrontPage() {
   return (
     <>
       <div
@@ -21,9 +21,7 @@ function FrontPage() {
       <OurTopSellingPlants />
       <CustomerReview />
       <OurBestO2 />
-      <Footer/>
+      <Footer />
     </>
   );
 }
-
-export default FrontPage;

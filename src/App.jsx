@@ -1,5 +1,6 @@
+import React from "react";
 import "./App.css";
-import FrontPage from "./pages/frontpage.jsx";
+import FrontPage from "./pages/FrontPage.jsx";
 
 function App() {
   return (
