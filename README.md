@@ -1,16 +1,22 @@
-# React + Vite
+# 🪴FloraVision
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a project assignment for SoftDef company.
 
-Currently, two official plugins are available:
+This is a Front-End implemention of [figma project](https://www.figma.com/design/U0mtBXWgFim69YDj4pjY8f/Front-end-test?node-id=0-1&t=oH11OPBWgwE38lvp-1) provided by the compnay.
+this project is made using [vite-react](https://vite.dev/) for project templete and [tailwindcss](https://tailwindcss.com/) for CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Run Project Locally
 
-## React Compiler
+### Clone the Github Repo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+`git clone https://github.com/robinsrarf/FloraVision.git`
 
-## Expanding the ESLint configuration
+### Run Using npm
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+` npm run dev`
+
+##
+
+this project is hosted using [vercel](https://vercel.com/)
+
+[live-project-link]()

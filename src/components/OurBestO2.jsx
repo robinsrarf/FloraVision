@@ -51,7 +51,7 @@ export default function OurBestO2() {
 function Carousel({ list }) {
   const [currIndex, setCurrIndex] = useState(0);
   function next() {
-    if (currIndex < list.length) setCurrIndex(currIndex + 1);
+    if (currIndex < list.length-1) setCurrIndex(currIndex + 1);
   }
   function prev() {
     if (currIndex > 0) setCurrIndex(currIndex - 1);
