@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 export default function Footer() {
   return (
     <>
-      <section className="flex flex-col px-30 py-25">
+      <section className="flex w-full flex-col px-30 py-25">
         <div className="flex justify-between">
           <div className="w-[20vw]">
             <a href="/" className="flex items-center text-3xl font-semibold">

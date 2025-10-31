@@ -1,4 +1,3 @@
-
 import corner from "../assets/corner.svg";
 export default function SectionHeading({ heading, cssClass = "" }) {
   return (
@@ -8,7 +7,7 @@ export default function SectionHeading({ heading, cssClass = "" }) {
       >
         <img src={corner} className="mt-5 -mr-10 rotate-180" />
 
-        <span className="text-center text-[55px]">{heading}</span>
+        <span className="text-center md:text-4xl xl:text-4xl">{heading}</span>
         <img src={corner} className="mb-5 -ml-10" />
       </h1>
     </>

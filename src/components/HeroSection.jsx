@@ -19,7 +19,7 @@ const plantDetails = [
 export default function HeroSection() {
   return (
     <>
-      <section className="flex w-full px-[9vw] pt-30">
+      <section className="flex w-full xl:px-[200px] xl:pt-25">
         {/* left side of hero section */}
         <div className="flex w-full flex-col pt-10">
           <div className="flex flex-col items-start gap-5 pr-99">
@@ -41,7 +41,7 @@ export default function HeroSection() {
             </div>
           </div>
           <div
-            className="mt-auto -mb-8 h-[237px] w-[409px] rounded-2xl bg-contain bg-no-repeat p-8 backdrop-blur-md"
+            className="mt-20 -mb-8 h-[237px] w-[409px] rounded-2xl bg-contain bg-no-repeat p-8 backdrop-blur-md"
             style={{
               backgroundImage: `url(${blurect})`,
               WebkitMaskImage: `url(${blurectmask})`,
@@ -84,9 +84,9 @@ function Carousel({ list }) {
   }
   return (
     <>
-      <div className="relative inset-0">
+      <div className="relative inset-0 pr-10">
         <div
-          className=".h-[622px] .w-lg h-[60vh] w-[23vw] bg-contain bg-no-repeat mask-contain mask-no-repeat backdrop-blur-lg"
+          className="= bg-contain bg-no-repeat mask-contain mask-no-repeat backdrop-blur-lg xl:h-[390px] xl:w-[320px]"
           style={{
             backgroundImage: `url(${blurbox})`,
             WebkitMaskImage: `url(${blurboxmask})`,
@@ -94,31 +94,36 @@ function Carousel({ list }) {
             maskSize: "100%",
           }}
         >
-          <div className="px- absolute bottom-20 flex w-full items-center justify-between gap-4">
-            <button className="h-[50px] w-[50px] cursor-pointer" onClick={prev}>
+          <div className="absolute flex h-fit w-full items-center justify-between gap-4 xl:bottom-8">
+            <button
+              className="cursor-pointer pl-2 xl:h-10 xl:w-10"
+              onClick={prev}
+            >
               <img
                 src={rightarrow}
-                className={`w-10 rotate-180 object-scale-down ${currIndex === 0 ? "opacity-0" : ""}`}
+                className={`w-10 rotate-180 ${currIndex === 0 ? "opacity-0" : ""}`}
               />
             </button>
             <div className="w-full flex-col space-y-3">
-              <p className="text-2xl">{list[currIndex].type}</p>
-              <p className="text-4xl font-semibold">{list[currIndex].name}</p>
-              <button className="cursor-pointer rounded-xl border-2 px-4 py-3 text-xl">
+              <p className="xl:text-xl">{list[currIndex].type}</p>
+              <p className="font-semibold xl:text-2xl">
+                {list[currIndex].name}
+              </p>
+              <button className="cursor-pointer rounded-xl border-2 xl:px-1 xl:py-2 xl:text-lg">
                 Buy Now
               </button>
             </div>
             <button
-              className="h-[50px] w-[50px] cursor-pointer pr-2"
+              className="cursor-pointer pr-2 xl:h-10 xl:w-10"
               onClick={next}
             >
               <img
                 src={rightarrow}
-                className={`w-10 object-scale-down ${currIndex === list.length - 1 ? "opacity-0" : ""}`}
+                className={`w-10 ${currIndex === list.length - 1 ? "opacity-0" : ""}`}
               />
             </button>
           </div>
-          <div className="absolute bottom-15 flex w-full justify-center gap-1">
+          <div className="absolute flex w-full justify-center gap-1 xl:bottom-5">
             {list.map((_, index) => (
               <div
                 key={index}
@@ -128,7 +133,7 @@ function Carousel({ list }) {
           </div>
         </div>
         <img
-          className="absolute -top-20 px-3"
+          className="absolute -top-20 px-3 xl:w-[320px]"
           src={list[currIndex].plantimg}
           alt="plant-img"
         />

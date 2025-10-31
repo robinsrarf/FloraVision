@@ -10,18 +10,20 @@ import Footer from "../components/Footer";
 export default function FrontPage() {
   return (
     <>
-      <div
-        className="bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${bg})` }}
-      >
-        <Header />
-        <HeroSection />
-        <OurTrendingPlants />
+      <div className="h-full w-screen overflow-hidden">
+        <div
+          className="w-full  bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${bg})` }}
+        >
+          <Header />
+          <HeroSection />
+          <OurTrendingPlants />
+        </div>
+        <OurTopSellingPlants />
+        <CustomerReview />
+        <OurBestO2 />
+        <Footer />
       </div>
-      <OurTopSellingPlants />
-      <CustomerReview />
-      <OurBestO2 />
-      <Footer />
     </>
   );
 }

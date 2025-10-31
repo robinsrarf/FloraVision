@@ -31,7 +31,7 @@ const reviewDetails = [
 export default function CustomerReview() {
   return (
     <>
-      <section className="flex w-full flex-col items-center">
+      <section className="flex w-full flex-col items-center ">
         <div className="m-30">
           <SectionHeading
             heading={"Customer Review"}
@@ -39,7 +39,7 @@ export default function CustomerReview() {
           />
         </div>
 
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center md:gap-2 xl:gap-8">
           {reviewDetails.map((card, index) => (
             <ReviewCard
               key={index}
@@ -58,24 +58,24 @@ export default function CustomerReview() {
 function ReviewCard({ profile, name, rating, review }) {
   return (
     <>
-      <div className="relative inset-0 h-[480px] w-lg">
+      <div className="relative inset-0 md:h-[300px] md:w-[370px] xl:h-[400px] xl:w-[450px]">
         <img
           src={blurbox}
           className="h-full w-full object-fill"
           alt="Blur box"
         />
-        <div className="absolute top-0 flex h-full w-full flex-col gap-20 p-15">
-          <div className="flex items-center gap-10">
+        <div className="absolute top-0 flex h-full w-full flex-col items-center md:gap-5 md:px-7 md:py-5 xl:gap-10 xl:p-15">
+          <div className="flex items-center md:gap-5 xl:gap-10">
             <img
               src={profile}
-              className="h-[88px] w-[88px] rounded-full object-cover drop-shadow-xl/20"
+              className="rounded-full object-cover drop-shadow-xl/20 md:h-[60px] md:w-[60px] xl:h-[70px] xl:w-[70px]"
             />
             <div className="flex flex-col items-start">
-              <p className="text-4xl">{name}</p>
+              <p className="md:text-2xl xl:text-3xl">{name}</p>
               <StarRating rating={rating} />
             </div>
           </div>
-          <p className="text-xl">{review}</p>
+          <p className="md:text-lg xl:text-lg">{review}</p>
         </div>
       </div>
     </>

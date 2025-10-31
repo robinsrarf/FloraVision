@@ -11,12 +11,12 @@ export default function Header() {
           className="mr-auto flex flex-row items-center gap-3 text-center"
           href="/"
         >
-          <img className="h-12 w-12" src={logo} alt="logo" />
-          <span className="text-center text-[28px] font-bold">
+          <img className="h-10 w-10 xl:h-12 xl:w-12" src={logo} alt="logo" />
+          <span className="text-center text-xl font-bold xl:text-[28px]">
             FloraVision.
           </span>
         </a>
-        <nav className="font-indie-flower mx-auto flex flex-row items-center gap-15 px-2 text-[24px]">
+        <nav className="font-indie-flower mx-auto flex flex-row items-center gap-7 px-2 text-xl xl:gap-15 xl:text-2xl">
           <a>Home</a>
           <a className="flex flex-row items-center gap-3">
             <span>Plants Type</span>
@@ -26,9 +26,21 @@ export default function Header() {
           <a>Contact</a>
         </nav>
         <div className="ml-auto flex h-[26px] flex-row gap-15">
-          <img className="h-[26px] w-[26px]" src={search} alt="search" />
-          <img className="h-[26px] w-[26px]" src={bag} alt="bag" />
-          <img className="h-[26px] w-[26px]" src={menu} alt="menu" />
+          <img
+            className="w-[] h-5 w-5 xl:h-[26px] xl:w-[26px]"
+            src={search}
+            alt="search"
+          />
+          <img
+            className="w-[] h-5 w-5 xl:h-[26px] xl:w-[26px]"
+            src={bag}
+            alt="bag"
+          />
+          <img
+            className="w-[] h-5 w-5 xl:h-[26px] xl:w-[26px]"
+            src={menu}
+            alt="menu"
+          />
         </div>
       </div>
     </>
